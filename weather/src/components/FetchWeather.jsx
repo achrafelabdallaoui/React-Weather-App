@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import BarraRicerca from "./BarraRicerca";
 import RisultatiMeteo from "./RisultatiMeteo";
@@ -11,6 +12,7 @@ function FetchWeather() {
     try {
       const response = await fetch(
         `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=472fd5a8a4862dffcd7119a94ee5bc4a&units=metric`
+        // `https://api.openweathermap.org/data/2.5/forecast?q=roma&appid=3f64327af1492cb6b843fb2420be96e9&units=metric`
       );
       const data = await response.json();
 
@@ -27,9 +29,10 @@ function FetchWeather() {
           city={city}
           handleSearch={handleSearch}
           setCity={setCity}
+
         />
       </Container>
-      <Container className="d-flex justify-content-center">
+      <Container className="d-flex justify-content-center " >
         <RisultatiMeteo city={city} weatherData={weatherData} />
       </Container>
     </>

@@ -17,7 +17,7 @@ const BarraRicerca = ({ city, setCity, handleSearch }) => {
           src = {img}
             width="70"
             height="70"
-            className="my-3"
+            className=""
           />
 
         <Form className="d-flex mx-3 ">
