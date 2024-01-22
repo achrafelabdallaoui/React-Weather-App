@@ -37,6 +37,7 @@ const RisultatiMeteo = ({city, weatherData, day}) => (
               <p>{day.list[0].main.humidity} % <WiHumidity /></p>
               <p>{day.list[0].wind.speed} km/h  <BiWind  /></p>
              <img src= {`https://openweathermap.org/img/wn/${day.list[0].weather[0].icon}@2x.png`} alt="" height={60}/>
+             <p>{day.list[0].weather[0].description}</p>
          </div>
          <div className="text-center bg-light bg-opacity-50 rounded-5 w-25 py-3">
               <p >Tomorrow</p>
@@ -45,6 +46,7 @@ const RisultatiMeteo = ({city, weatherData, day}) => (
               <p>{day.list[8].main.humidity} % <WiHumidity /></p>
               <p>{day.list[8].wind.speed} km/h  <BiWind  /></p>
              <img src= {`https://openweathermap.org/img/wn/${day.list[8].weather[0].icon}@2x.png`} alt="" height={60}/>
+             <p>{day.list[8].weather[0].description}</p>
          </div>
          <div className="text-center bg-light bg-opacity-50 rounded-5 w-25 py-3">
               <p >Day After</p>
@@ -53,6 +55,7 @@ const RisultatiMeteo = ({city, weatherData, day}) => (
               <p>{day.list[16].main.humidity} % <WiHumidity /></p>
               <p>{day.list[16].wind.speed} km/h  <BiWind  /></p>
              <img src= {`https://openweathermap.org/img/wn/${day.list[16].weather[0].icon}@2x.png`} alt="" height={60}/>
+             <p>{day.list[16].weather[0].description}</p>
          </div>
                 
         </div>

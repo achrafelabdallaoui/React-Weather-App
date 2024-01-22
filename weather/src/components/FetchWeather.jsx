@@ -24,7 +24,7 @@ function FetchWeather() {
 
     const fetchForecast = async () => {
       try {
-        const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=3f64327af1492cb6b843fb2420be96e9&lang=it&units=metric`);
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=3f64327af1492cb6b843fb2420be96e9&lang=en&units=metric`);
         const data = await response.json();
         setDay(data);
         console.log(data);
