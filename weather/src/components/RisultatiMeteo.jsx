@@ -19,7 +19,7 @@ const RisultatiMeteo = ({city, weatherData, day}) => (
             <img src= {`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png `} height={60}/>
         </div>
         </div>
-        <div className=" d-flex my-4 justify-content-around bg-light bg-opacity-25 rounded-5">
+        <div className=" d-flex my-4 justify-content-around bg-light bg-opacity-25 rounded-5 km/h">
             <div className="mx-3">Temp max:<br/> 
             {weatherData.main.temp_max}°C <FaTemperatureHigh /></div>
             <div className="mx-3">Temp min:<br/> 
@@ -35,7 +35,7 @@ const RisultatiMeteo = ({city, weatherData, day}) => (
               
               <p>{day.list[0].main.temp}°C <FaTemperatureHigh /></p>
               <p>{day.list[0].main.humidity} % <WiHumidity /></p>
-              <p>{day.list[0].wind.speed}  <BiWind  /></p>
+              <p>{day.list[0].wind.speed} km/h  <BiWind  /></p>
              <img src= {`https://openweathermap.org/img/wn/${day.list[0].weather[0].icon}@2x.png`} alt="" height={60}/>
          </div>
          <div className="text-center bg-light bg-opacity-50 rounded-5 w-25 py-3">
@@ -43,7 +43,7 @@ const RisultatiMeteo = ({city, weatherData, day}) => (
               
               <p>{day.list[8].main.temp}°C <FaTemperatureHigh /></p>
               <p>{day.list[8].main.humidity} % <WiHumidity /></p>
-              <p>{day.list[8].wind.speed}  <BiWind  /></p>
+              <p>{day.list[8].wind.speed} km/h  <BiWind  /></p>
              <img src= {`https://openweathermap.org/img/wn/${day.list[8].weather[0].icon}@2x.png`} alt="" height={60}/>
          </div>
          <div className="text-center bg-light bg-opacity-50 rounded-5 w-25 py-3">
@@ -51,7 +51,7 @@ const RisultatiMeteo = ({city, weatherData, day}) => (
               
               <p>{day.list[16].main.temp}°C <FaTemperatureHigh /></p>
               <p>{day.list[16].main.humidity} % <WiHumidity /></p>
-              <p>{day.list[16].wind.speed}  <BiWind  /></p>
+              <p>{day.list[16].wind.speed} km/h  <BiWind  /></p>
              <img src= {`https://openweathermap.org/img/wn/${day.list[16].weather[0].icon}@2x.png`} alt="" height={60}/>
          </div>
                 
